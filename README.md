@@ -66,6 +66,14 @@ _Note: A detailed architecture diagram is available in the `docs/architecture/` 
 - **Deployment:** PythonAnywhere
 - **CI/CD:** GitHub Actions
 - **Documentation:** Markdown, Swagger/OpenAPI
+## 📚 Architecture & Engineering Specifications (2026 Modernization)
+
+Detailed specifications and deployment architecture plans are maintained in the [`docs/`](docs/) directory:
+
+- 🚀 **[GCP Zero-Cost Deployment Plan](docs/gcp_deployment_plan.md)**: Full production guide for deploying MediFinderBot on Google Cloud Platform at $0.00/month using Cloud Run, Cloud Run Jobs, Cloud Scheduler, Secret Manager, Gemini 2.0 Flash, and the existing PostgreSQL VM.
+- ⚡ **[Architecture & ETL Refactoring Plan](docs/architecture_refactoring_plan.md)**: Comprehensive diagnosis of legacy bottlenecks (2-3 day runs) and migration to high-performance bulk-staging (<60s) with Gemini 2.0 Flash native tool-calling.
+- 🔍 **[MINSA SISMED Power BI Scraping Specification](docs/sismed_powerbi_scraping_spec.md)**: Reverse-engineered automation architecture for extracting daily medicine stock from MINSA's Power BI service using Playwright and sandboxed Blob extraction.
+- 💊 **[DIGEMID OPM API Scraping Specification](docs/opm_digemid_scraping_spec.md)**: High-speed extraction specification for the national medicine product catalog (18,000+ products in <6s) via direct microservice queries.
 
 ## 📋 Development Roadmap
 
